@@ -238,10 +238,11 @@ class StatusMenuController: NSObject, PreferencesWindowDelegate {
                 let secondSymbolAtt =  NSAttributedString(string:secondSymbol, attributes: self.useColouredSymbols ? secondFont: font)
                 let secondPriceAtt = NSAttributedString(string:self.secondPrice, attributes: font)
 
-                let space = NSAttributedString(string: "")
+                let space = NSAttributedString(string: " ")
                 mutableAttributedString.append(firstSymbolAtt)
                 mutableAttributedString.append(space)
                 mutableAttributedString.append(firstPriceAtt)
+                mutableAttributedString.append(space)
                 mutableAttributedString.append(space)
                 mutableAttributedString.append(secondSymbolAtt)
                 mutableAttributedString.append(space)
